@@ -44,9 +44,9 @@ module integrates Serenity/JS and the Serenity BDD reporting CLI.  This integrat
 
 During test execution  - screenshots are stored ( target/site/serenity)
 
-Generate report ( output will stored at target/site/serenity/index.html ) - Index.html opened in a web browser 
-
 `npm run test:report`
+
+Generate report ( output will stored at target/site/serenity/index.html ) - Index.html opened in a web browser 
 
 ## Generated Test Report 
 
