@@ -50,10 +50,9 @@ Generate report ( output will stored at target/site/serenity/index.html ) - Inde
 
 ## Generated Test Report 
 
-
-![Screenshot from 2021-08-23 14-06-33](https://user-images.githubusercontent.com/28037727/130452962-66c8a19b-1a67-456c-afbf-e631890ad3c1.png)
-![Screenshot from 2021-08-23 14-06-53](https://user-images.githubusercontent.com/28037727/130452965-0cbc419a-888b-4c2b-a98a-fb37e386e15f.png)
-![Screenshot from 2021-08-23 14-07-23](https://user-images.githubusercontent.com/28037727/130452966-364a645b-7922-4d33-b3b9-e72d7d9dcdea.png)
+![Screenshot from 2021-08-23 16-12-29](https://user-images.githubusercontent.com/28037727/130472346-ddc7e20b-4bfb-4d6d-b285-09e4fe18bbad.png)
+![Screenshot from 2021-08-23 16-13-18](https://user-images.githubusercontent.com/28037727/130472351-d10d87fe-f627-4492-97da-eda09342eb7f.png)
+![Screenshot from 2021-08-23 16-14-15](https://user-images.githubusercontent.com/28037727/130472356-c62b77e3-73f2-4204-8331-b321eea29b4a.png)
 
 
 
