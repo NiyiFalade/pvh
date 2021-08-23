@@ -9,16 +9,16 @@ More Information here  - https://serenity-bdd.github.io/theserenitybook/latest/s
 
 ## Test Project Structure 
 
-Protractor - testrunner and webdriverjs libray
-Cucumber 
-Serenity BDD 
-Serenity-js
-Serenity-js reporting services  - Test Report
+1. Protractor - testrunner and webdriverjs libray
+1. Cucumber-js
+1. Serenity BDD 
+1. Serenity-js
+1. Serenity-js reporting services  - Test Report
  
 
 ## Issues  -  
-During test development and execution - I had an intermittent validation error with address book zipCode field ( I was using valid NL zipcodes).
-Te other main issue was the newsletter pop up ( Random in nature ) it was handled in parts of tests but I was unable to determine everywhere else the newsletter pop up during test execution which resulted in some test failures 
+* During test development and execution - I had an intermittent validation error with address book zipCode field ( I was using valid NL zipcodes).
+* The other main issue was the newsletter pop up ( Random in nature ) it was handled in parts of tests but I was unable to determine everywhere else the newsletter poped up or frequency most importantly the rules governing when and how it poped up during test execution which resulted in some test failures 
  
 
 ## Installing
