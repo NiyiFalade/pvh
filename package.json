@@ -1,0 +1,35 @@
+{
+    "name": "pvh_js_test",
+    "version": "0.0.1",
+    "description": "pvh javascript test framework ",
+    "main": "index.js",
+    "scripts": {
+        "test": "protractor ./protractor.conf.js --cucumberOpts.tags",
+        "webdriver-update": "webdriver-manager update --versions.chrome=87.0.4280.66",
+        "pretest": "rimraf target",
+        "postinstall": "serenity-bdd update",
+        "test:report": "serenity-bdd run",
+        "watch:build": "tsc --watch"
+        
+    },
+    "author": "Niyi Falade",
+    "license": "ISC",
+    "peerDependencies": {},
+    "dependencies": {},
+    "devDependencies": {
+        "@cucumber/cucumber": "^7.3.1",
+        "@serenity-js/core": "^2.30.3",
+        "@serenity-js/assertions": "^2.30.3",
+        "@serenity-js/console-reporter": "^2.30.3",
+        "@serenity-js/cucumber": "^2.30.3",
+        "@serenity-js/protractor": "^2.30.3",
+        "@serenity-js/serenity-bdd": "^2.30.3",
+        "chromedriver": "^87.0.4",
+        "is-ci": "^2.0.0",
+        "rimraf": "^3.0.0",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.3.5",
+        "protractor": "^7.0.0",
+        "faker": "5.5.3"
+    }
+}
