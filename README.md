@@ -17,7 +17,9 @@ More Information here  - https://serenity-bdd.github.io/theserenitybook/latest/s
  
 
 ## Issues  -  
-* During test development and execution - I had an intermittent validation error with address book zipCode field ( I was using valid NL zipcodes).
+* During test development and execution - I had an intermittent validation error with address book zipCode field ( I was using valid NL zipcodes). see the screenshot   ![Screenshot from 2021-08-23 16-21-10](https://user-images.githubusercontent.com/28037727/130473449-d7b4a467-5b43-4dab-82a0-a810ff652206.png)
+
+
 * The other main issue was the newsletter pop up ( Random in nature ) it was handled in parts of tests but I was unable to determine everywhere else the newsletter poped up or frequency most importantly the rules governing when and how it poped up during test execution which resulted in some test failures 
  
 
