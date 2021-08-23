@@ -17,7 +17,8 @@ export class AccountRegistrationPageFactory {
     static agreeTerms = Target.the('agreeTerms').located(by.css('div.Checkbox.agree-terms > label'))
     static newsletter = Target.the('newsletter').located(by.css('div.Checkbox.create-account-newsletter > label'))
     static accountIcon = Target.the('account icon').located(by.className('header__action account-link'))
-    static myAccount = Target.the("my account").located(by.linkText('Accountgegevens'))
+    static myAccount = Target.the("my account").located(by.className('my-account__title'))
     static addressBook = Target.the('address book').located(by.linkText('Adresboek'));
     static addAddressBook = Target.the('add address').located(by.className(' Button Button__secondary'));
+    static logOut = Target.the('log out').located(by.xpath('//*[@data-testid=\'sign-out-button\']'))
 }

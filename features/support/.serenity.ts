@@ -4,5 +4,5 @@ import { Actors } from './Actors';
 
 Before(() => engage(new Actors()));
 
-setDefaultTimeout(15000);
+setDefaultTimeout(45000);
 

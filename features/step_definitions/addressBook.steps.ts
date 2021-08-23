@@ -44,5 +44,5 @@ Then('user validates address has been saved', function () {
         Hover.over(AccountRegistrationPageFactory.accountIcon),
         Click.on(AccountRegistrationPageFactory.addressBook),
         Wait.for(Duration.ofSeconds(2)),
-        Ensure.that(Text.of(AddressBookPageFactory.completedAddressOption), equals('Kerkstraat')))
+        Ensure.that(Text.of(AddressBookPageFactory.completedAddressOption), equals('Hooftstraat')))
 });

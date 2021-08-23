@@ -29,15 +29,14 @@ Feature: Registration page validations
     When user clicks on create account button
     Then password error message is displayed 'Je wachtwoord moet tussen 5 en 20 tekens lang zijn'
 
-
   Scenario: Create a valid account
     Given user enters a valid email
     And user enter an complete password 'abcde'
     And user checks the terms label
     When user clicks on create account button
     Then user account is successfully created
+    Then user logs out
 
-  
   Scenario: verify that address can be added
     Given user enters a valid email
     And user enter an complete password 'abcde'
@@ -49,10 +48,10 @@ Feature: Registration page validations
     When enter the following address
       | firstName | qwqw       |
       | lastName  | qwqw       |
-      | street    | Kerkstraat |
-      | houseNo   | 1113       |
-      | city      | vaals      |
-      | postCode  | 4307 CB    |
+      | street    | Pieter Cornelisz Hooftstraat |
+      | houseNo   | 101       |
+      | city      | Amsterdam      |
+      | postCode  | 1071 BR   |
     Then update address by clicking on the save button
     Then user validates address has been saved
 

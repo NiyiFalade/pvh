@@ -1,36 +1,30 @@
 Failures:
 
-1) Scenario: Create an account without entering a valid email okTerms and password # [90mfeatures/pvhEcom.feature:17[39m
+1) Scenario: verify that address can be added # [90mfeatures/pvhEcom.feature:40[39m
    [32m✔ Before[39m # [90mfeatures/support/.serenity.ts:5[39m
    [32m✔ Given 'user' is on tommy NL homepage[39m # [90mfeatures/step_definitions/registration.steps.ts:11[39m
    [32m✔ And user can see the tommy hilfiger brand logo[39m # [90mfeatures/step_definitions/registration.steps.ts:18[39m
    [32m✔ And user clicks on the registration link[39m # [90mfeatures/step_definitions/registration.steps.ts:24[39m
-   [31m✖ And registration window is in view[39m # [90mfeatures/step_definitions/registration.steps.ts:33[39m
-       [31mAssertionError: Expected the authentication portal to become present[39m
-       [31m    at Ensure.asAssertionError (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/assertions/src/Ensure.ts:169:16)[39m
-       [31m    at Ensure.errorForOutcome (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/assertions/src/Ensure.ts:156:21)[39m
-       [31m    at MatchesObjectsWithCommonPrototype.transformation (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/assertions/src/Ensure.ts:109:36)[39m
-       [31m    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/niyifalade/Downloads/PVH/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)[39m
-       [31m    at ObjectMatcher.PatternMatcher.else (/home/niyifalade/Downloads/PVH/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/assertions/src/Ensure.ts:112:26[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-   [36m- When user clicks on the create an account link[39m # [90mfeatures/step_definitions/registration.steps.ts:39[39m
-   [36m- Then account registration is displayed[39m # [90mfeatures/step_definitions/registration.steps.ts:45[39m
-   [36m- When user clicks on create account button without entering a valid email password and ok terms[39m # [90mfeatures/step_definitions/registration.steps.ts:52[39m
-   [36m- Then error messages is displayed for username password and okTerms[39m # [90mfeatures/step_definitions/registration.steps.ts:65[39m
-   [32m✔ After[39m # [90m/internal/serenity-js/cucumber:0[39m
-
-2) Scenario: Invalid email is supplied # [90mfeatures/pvhEcom.feature:21[39m
-   [32m✔ Before[39m # [90mfeatures/support/.serenity.ts:5[39m
-   [32m✔ Given 'user' is on tommy NL homepage[39m # [90mfeatures/step_definitions/registration.steps.ts:11[39m
-   [32m✔ And user can see the tommy hilfiger brand logo[39m # [90mfeatures/step_definitions/registration.steps.ts:18[39m
-   [32m✔ And user clicks on the registration link[39m # [90mfeatures/step_definitions/registration.steps.ts:24[39m
-   [32m✔ And registration window is in view[39m # [90mfeatures/step_definitions/registration.steps.ts:33[39m
-   [32m✔ When user clicks on the create an account link[39m # [90mfeatures/step_definitions/registration.steps.ts:39[39m
-   [32m✔ Then account registration is displayed[39m # [90mfeatures/step_definitions/registration.steps.ts:45[39m
-   [31m✖ Given user enters an invalid email 'junkerniyi@'[39m # [90mfeatures/step_definitions/registration.steps.ts:73[39m
-       [31mNoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
+   [32m✔ And registration window is in view[39m # [90mfeatures/step_definitions/registration.steps.ts:32[39m
+   [32m✔ When user clicks on the create an account link[39m # [90mfeatures/step_definitions/registration.steps.ts:38[39m
+   [32m✔ Then account registration is displayed[39m # [90mfeatures/step_definitions/registration.steps.ts:44[39m
+   [32m✔ Given user enters a valid email[39m # [90mfeatures/step_definitions/registration.steps.ts:80[39m
+   [32m✔ And user enter an complete password 'abcde'[39m # [90mfeatures/step_definitions/registration.steps.ts:90[39m
+   [32m✔ And user checks the terms label[39m # [90mfeatures/step_definitions/registration.steps.ts:110[39m
+   [32m✔ And user clicks on create account button[39m # [90mfeatures/step_definitions/registration.steps.ts:58[39m
+   [32m✔ And user account is successfully created[39m # [90mfeatures/step_definitions/registration.steps.ts:119[39m
+   [32m✔ And click on my addressbook[39m # [90mfeatures/step_definitions/addressBook.steps.ts:9[39m
+   [32m✔ And click on the address book button[39m # [90mfeatures/step_definitions/addressBook.steps.ts:16[39m
+   [32m✔ When enter the following address[39m # [90mfeatures/step_definitions/addressBook.steps.ts:22[39m
+       [32m| firstName | qwqw                         |[39m
+       [32m| lastName  | qwqw                         |[39m
+       [32m| street    | Pieter Cornelisz Hooftstraat |[39m
+       [32m| houseNo   | 101                          |[39m
+       [32m| city      | Amsterdam                    |[39m
+       [32m| postCode  | 1071 BR                      |[39m
+   [32m✔ Then update address by clicking on the save button[39m # [90mfeatures/step_definitions/addressBook.steps.ts:36[39m
+   [31m✖ Then user validates address has been saved[39m # [90mfeatures/step_definitions/addressBook.steps.ts:42[39m
+       [31mWebDriverError: element click intercepted: Element <a href="/myaccount/addressbook?storeId=30019&amp;langId=31&amp;catalogId=10158" class="--active" data-testid="/myaccount/addressbook?storeId=30019&amp;langId=31&amp;catalogId=10158">...</a> is not clickable at point (347, 374). Other element would receive the click: <div class="ReactModal__Overlay ReactModal__Overlay--after-open my-account-modal__overlay">...</div>[39m
        [31m  (Session info: chrome=87.0.4280.66)[39m
        [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
        [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
@@ -38,179 +32,17 @@ Failures:
        [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
        [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
        [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
+       [31m    at runMicrotasks (<anonymous>)[39m
        [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error: [39m
        [31m    at ElementArrayFinder.applyAction_ (/home/niyifalade/Downloads/PVH/node_modules/protractor/built/element.js:459:27)[39m
-       [31m    at ElementArrayFinder.<computed> [as sendKeys] (/home/niyifalade/Downloads/PVH/node_modules/protractor/built/element.js:91:29)[39m
+       [31m    at ElementArrayFinder.<computed> [as click] (/home/niyifalade/Downloads/PVH/node_modules/protractor/built/element.js:91:29)[39m
        [31m    at Proxy.<computed> (/home/niyifalade/Downloads/PVH/node_modules/protractor/built/element.js:831:22)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Enter.ts:91:21[39m
+       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Click.ts:84:77[39m
        [31m    at Object.withAnswerOf (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/withAnswerOf.ts:18:12)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Enter.ts:90:28[39m
-   [36m- When user clicks on create account button[39m # [90mfeatures/step_definitions/registration.steps.ts:59[39m
-   [36m- Then email error message is displayed 'Sorry, dit is geen geldig e-mailadres'[39m # [90mfeatures/step_definitions/registration.steps.ts:98[39m
-   [31m✖ After[39m # [90m/internal/serenity-js/cucumber:0[39m
-       [31mError: 1 async operation has failed to complete:[39m
-       [31m[Photographer:TakePhotosOfInteractions] Taking screenshot of 'user enters 'junkerniyi@' into the create an email'... - NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31m    at async Promise.all (index 0)[39m
-       [31m---[39m
+       [31m    at Click.performAs (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Click.ts:84:16)[39m
+       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/core/src/screenplay/activities/TrackedActivity.ts:34:39[39m
+   [32m✔ After[39m # [90m/internal/serenity-js/cucumber:0[39m
 
-       [31m    at Timeout.<anonymous> (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/core/src/stage/StageManager.ts:59:39)[39m
-       [31m    at listOnTimeout (internal/timers.js:549:17)[39m
-       [31m    at processTimers (internal/timers.js:492:7)[39m
-
-3) Scenario: password less than 5 chars # [90mfeatures/pvhEcom.feature:26[39m
-   [32m✔ Before[39m # [90mfeatures/support/.serenity.ts:5[39m
-   [31m✖ Given 'user' is on tommy NL homepage[39m # [90mfeatures/step_definitions/registration.steps.ts:11[39m
-       [31mTestCompromisedError: Couldn't navigate to https://nl.tommy.com/[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Navigate.ts:205:31[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31mCaused by: NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-   [36m- And user can see the tommy hilfiger brand logo[39m # [90mfeatures/step_definitions/registration.steps.ts:18[39m
-   [36m- And user clicks on the registration link[39m # [90mfeatures/step_definitions/registration.steps.ts:24[39m
-   [36m- And registration window is in view[39m # [90mfeatures/step_definitions/registration.steps.ts:33[39m
-   [36m- When user clicks on the create an account link[39m # [90mfeatures/step_definitions/registration.steps.ts:39[39m
-   [36m- Then account registration is displayed[39m # [90mfeatures/step_definitions/registration.steps.ts:45[39m
-   [36m- Given user enters a valid email[39m # [90mfeatures/step_definitions/registration.steps.ts:81[39m
-   [36m- And user enter an incomplete password 'abcd'[39m # [90mfeatures/step_definitions/registration.steps.ts:91[39m
-   [36m- When user clicks on create account button[39m # [90mfeatures/step_definitions/registration.steps.ts:59[39m
-   [36m- Then password error message is displayed 'Je wachtwoord moet tussen 5 en 20 tekens lang zijn'[39m # [90mfeatures/step_definitions/registration.steps.ts:105[39m
-   [31m✖ After[39m # [90m/internal/serenity-js/cucumber:0[39m
-       [31mError: 1 async operation has failed to complete:[39m
-       [31m[Photographer:TakePhotosOfInteractions] Taking screenshot of 'user navigates to 'https://nl.tommy.com/''... - NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31m    at async Promise.all (index 0)[39m
-       [31m---[39m
-
-       [31m    at Timeout.<anonymous> (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/core/src/stage/StageManager.ts:59:39)[39m
-       [31m    at listOnTimeout (internal/timers.js:549:17)[39m
-       [31m    at processTimers (internal/timers.js:492:7)[39m
-
-4) Scenario: Create a valid account # [90mfeatures/pvhEcom.feature:33[39m
-   [32m✔ Before[39m # [90mfeatures/support/.serenity.ts:5[39m
-   [31m✖ Given 'user' is on tommy NL homepage[39m # [90mfeatures/step_definitions/registration.steps.ts:11[39m
-       [31mTestCompromisedError: Couldn't navigate to https://nl.tommy.com/[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Navigate.ts:205:31[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31mCaused by: NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-   [36m- And user can see the tommy hilfiger brand logo[39m # [90mfeatures/step_definitions/registration.steps.ts:18[39m
-   [36m- And user clicks on the registration link[39m # [90mfeatures/step_definitions/registration.steps.ts:24[39m
-   [36m- And registration window is in view[39m # [90mfeatures/step_definitions/registration.steps.ts:33[39m
-   [36m- When user clicks on the create an account link[39m # [90mfeatures/step_definitions/registration.steps.ts:39[39m
-   [36m- Then account registration is displayed[39m # [90mfeatures/step_definitions/registration.steps.ts:45[39m
-   [36m- Given user enters a valid email[39m # [90mfeatures/step_definitions/registration.steps.ts:81[39m
-   [36m- And user enter an complete password 'abcde'[39m # [90mfeatures/step_definitions/registration.steps.ts:91[39m
-   [36m- And user checks the terms label[39m # [90mfeatures/step_definitions/registration.steps.ts:111[39m
-   [36m- When user clicks on create account button[39m # [90mfeatures/step_definitions/registration.steps.ts:59[39m
-   [36m- Then user account is successfully created[39m # [90mfeatures/step_definitions/registration.steps.ts:120[39m
-   [31m✖ After[39m # [90m/internal/serenity-js/cucumber:0[39m
-       [31mError: 1 async operation has failed to complete:[39m
-       [31m[Photographer:TakePhotosOfInteractions] Taking screenshot of 'user navigates to 'https://nl.tommy.com/''... - NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31m    at async Promise.all (index 0)[39m
-       [31m---[39m
-
-       [31m    at Timeout.<anonymous> (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/core/src/stage/StageManager.ts:59:39)[39m
-       [31m    at listOnTimeout (internal/timers.js:549:17)[39m
-       [31m    at processTimers (internal/timers.js:492:7)[39m
-
-5) Scenario: verify that address can be added # [90mfeatures/pvhEcom.feature:41[39m
-   [32m✔ Before[39m # [90mfeatures/support/.serenity.ts:5[39m
-   [31m✖ Given 'user' is on tommy NL homepage[39m # [90mfeatures/step_definitions/registration.steps.ts:11[39m
-       [31mTestCompromisedError: Couldn't navigate to https://nl.tommy.com/[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/@serenity-js/protractor/src/screenplay/interactions/Navigate.ts:205:31[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31mCaused by: NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-   [36m- And user can see the tommy hilfiger brand logo[39m # [90mfeatures/step_definitions/registration.steps.ts:18[39m
-   [36m- And user clicks on the registration link[39m # [90mfeatures/step_definitions/registration.steps.ts:24[39m
-   [36m- And registration window is in view[39m # [90mfeatures/step_definitions/registration.steps.ts:33[39m
-   [36m- When user clicks on the create an account link[39m # [90mfeatures/step_definitions/registration.steps.ts:39[39m
-   [36m- Then account registration is displayed[39m # [90mfeatures/step_definitions/registration.steps.ts:45[39m
-   [36m- Given user enters a valid email[39m # [90mfeatures/step_definitions/registration.steps.ts:81[39m
-   [36m- And user enter an complete password 'abcde'[39m # [90mfeatures/step_definitions/registration.steps.ts:91[39m
-   [36m- And user checks the terms label[39m # [90mfeatures/step_definitions/registration.steps.ts:111[39m
-   [36m- And user clicks on create account button[39m # [90mfeatures/step_definitions/registration.steps.ts:59[39m
-   [36m- And user account is successfully created[39m # [90mfeatures/step_definitions/registration.steps.ts:120[39m
-   [36m- And click on my addressbook[39m # [90mfeatures/step_definitions/addressBook.steps.ts:9[39m
-   [36m- And click on the address book button[39m # [90mfeatures/step_definitions/addressBook.steps.ts:16[39m
-   [36m- When enter the following address[39m # [90mfeatures/step_definitions/addressBook.steps.ts:22[39m
-       [36m| firstName | qwqw       |[39m
-       [36m| lastName  | qwqw       |[39m
-       [36m| street    | Kerkstraat |[39m
-       [36m| houseNo   | 1113       |[39m
-       [36m| city      | vaals      |[39m
-       [36m| postCode  | 4307 CB    |[39m
-   [36m- Then update address by clicking on the save button[39m # [90mfeatures/step_definitions/addressBook.steps.ts:36[39m
-   [36m- Then user validates address has been saved[39m # [90mfeatures/step_definitions/addressBook.steps.ts:42[39m
-   [31m✖ After[39m # [90m/internal/serenity-js/cucumber:0[39m
-       [31mError: 1 async operation has failed to complete:[39m
-       [31m[Photographer:TakePhotosOfInteractions] Taking screenshot of 'user navigates to 'https://nl.tommy.com/''... - NoSuchWindowError: no such window: target window already closed[39m
-       [31mfrom unknown error: web view not found[39m
-       [31m  (Session info: chrome=87.0.4280.66)[39m
-       [31mBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'[39m
-       [31mSystem info: host: 'niyifalade-Swift-SF514-53T', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.10-050610-generic', java.version: '11.0.11'[39m
-       [31mDriver info: driver.version: unknown[39m
-       [31m    at Object.checkLegacyResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/error.js:546:15)[39m
-       [31m    at parseHttpResponse (/home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:509:13)[39m
-       [31m    at /home/niyifalade/Downloads/PVH/node_modules/selenium-webdriver/lib/http.js:441:30[39m
-       [31m    at processTicksAndRejections (internal/process/task_queues.js:97:5)[39m
-       [31m    at async Promise.all (index 0)[39m
-       [31m---[39m
-
-       [31m    at Timeout.<anonymous> (/home/niyifalade/Downloads/PVH/node_modules/@serenity-js/core/src/stage/StageManager.ts:59:39)[39m
-       [31m    at listOnTimeout (internal/timers.js:549:17)[39m
-       [31m    at processTimers (internal/timers.js:492:7)[39m
-
-5 scenarios ([31m5 failed[39m)
-54 steps ([31m5 failed[39m, [36m40 skipped[39m, [32m9 passed[39m)
-0m31.966s (executing steps: 0m31.777s)
+5 scenarios ([31m1 failed[39m, [32m4 passed[39m)
+55 steps ([31m1 failed[39m, [32m54 passed[39m)
+2m20.140s (executing steps: 2m19.869s)

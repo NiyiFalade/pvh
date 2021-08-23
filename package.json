@@ -1,7 +1,7 @@
 {
     "name": "pvh_js_test",
     "version": "0.0.1",
-    "description": "pvh javascript test framework ",
+    "description": "pvh typescript test framework ",
     "main": "index.js",
     "scripts": {
         "test": "protractor ./protractor.conf.js --cucumberOpts.tags",
@@ -10,7 +10,7 @@
         "postinstall": "serenity-bdd update",
         "test:report": "serenity-bdd run",
         "watch:build": "tsc --watch"
-        
+
     },
     "author": "Niyi Falade",
     "license": "ISC",

@@ -120,10 +120,14 @@ Then('user account is successfully created', function () {
     return actorInTheSpotlight().attemptsTo(
         Check.whether(AddressBookPageFactory.closeNewsLetter, isVisible()).andIfSo(Click.on(AddressBookPageFactory.closeNewsLetter)),
         Wait.upTo(Duration.ofSeconds(5)).until(AccountRegistrationPageFactory.accountIcon, isClickable()),
-
-        Check.whether(AddressBookPageFactory.closeNewsLetter, isVisible()).andIfSo(Click.on(AddressBookPageFactory.closeNewsLetter)),
-        Hover.over(AccountRegistrationPageFactory.accountIcon),
         Ensure.that(AccountRegistrationPageFactory.myAccount, isVisible())
     )
 });
+
+Then('user logs out', function () {
+    return actorInTheSpotlight().attemptsTo (
+        Hover.over(AccountRegistrationPageFactory.accountIcon),
+        Click.on(AccountRegistrationPageFactory.logOut)
+    )
+})
 
