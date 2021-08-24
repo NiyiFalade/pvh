@@ -1,6 +1,6 @@
 # PVH typescript test framework
 
-PVH typescript test framework is based on the Serenity Screenplay pattern an approach to writing high quality automated acceptance test based on software engineering principles. In the screenplay pattern, we call the a user interacting with the system an Actor.  Actors are at the heart of the screenplay pattern. Each Actor has a certain number of Abilities such as to browse the web or query a restful web service
+PVH typescript test framework is based on the Serenity Screenplay pattern an approach to writing high quality automated acceptance test based on software engineering principles. In the screenplay pattern, we call the user interacting with the system an Actor.  Actors are at the heart of the screenplay pattern. Each Actor has a certain number of Abilities such as to browse the web or query a restful web service
 
 ![Screenshot from 2021-08-23 14-54-45](https://user-images.githubusercontent.com/28037727/130459640-17f7cbee-9f99-4732-a846-8b53206157c0.png)
 
